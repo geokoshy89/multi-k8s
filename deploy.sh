@@ -8,7 +8,7 @@ docker push geokoshy89/mult-worker:latest
 
 docker push geokoshy89/multi-client:$SHA
 docker push geokoshy89/multi-server:$SHA
-docker push geokoshy89/mult-worker:$SHA
+docker push geokoshy89/multi-worker:$SHA
 
 kubectl apply -f k8s
 
