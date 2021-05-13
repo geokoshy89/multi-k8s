@@ -1,5 +1,5 @@
 docker build -t geokoshy89/multi-client:latest -t geokoshy89/multi-client:$SHA -f ./client/Dockerfile ./client
-dokcer build -t geokoshy89/multi-server:latest -t geokoshy89/multi-server:$SHA -f ./server/Dockerfile ./server
+docker build -t geokoshy89/multi-server:latest -t geokoshy89/multi-server:$SHA -f ./server/Dockerfile ./server
 docker build -t geokoshy89/multi-worker:latest -t geokoshy89/multi-worker:$SHA -f ./worker/Dockerfile ./worker
 
 docker push geokoshy89/multi-client:latest
