@@ -1,6 +1,10 @@
 sudo: required
 services:
    - docker
+env:
+  global:
+    - SHA=$(git rev-parse HEAD)
+    - CLOUDSDK_CORE_DISABLE_PROMPTS=1
 before_install:
   - openssl aes-256-cbc -K $encrypted_18a3e8210f75_key -iv $encrypted_18a3e8210f75_iv -in sr-account.json.enc -out sr-account.json -d
   - curl https://sdk.cloud.google.com | bash > /dev/null;
